@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DINHTHEVINH_2280603677.7i9db8iw8u.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7i9db8iw8u"},{"Name":"integrity","Value":"sha256-oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50="},{"Name":"label","Value":"_content/DINHTHEVINH_2280603677/DINHTHEVINH_2280603677.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 19:49:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 20:05:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DINHTHEVINH_2280603677/DINHTHEVINH_2280603677.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DINHTHEVINH_2280603677.7i9db8iw8u.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 19:49:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oWNgig3b/o3WEkG5EWRDtQL\u002B74aw06bRm9/7hgvzm50=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 20:05:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DINHTHEVINH_2280603677/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

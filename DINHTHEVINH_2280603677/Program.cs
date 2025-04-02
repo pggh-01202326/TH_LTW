@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using DINHTHEVINH_2280603677.Models;
 using DINHTHEVINH_2280603677.Repositories;
+using DINHTHEVINH_2280603677.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

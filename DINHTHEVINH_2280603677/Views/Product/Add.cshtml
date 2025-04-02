@@ -1,0 +1,51 @@
+﻿@model DINHTHEVINH_2280603677.Models.Product 
+@using Microsoft.AspNetCore.Mvc.Rendering 
+@{ 
+    ViewData["Title"] = "Add Product"; 
+} 
+  
+  
+<form asp-action="Add" method="post" enctype="multipart/form-data"> 
+    <div class="form-group"> 
+        <label asp-for="Name"></label> 
+        <input asp-for="Name" class="form-control" /> 
+        <span asp-validation-for="Name" class="text-danger"></span> 
+    </div> 
+    <div class="form-group"> 
+        <label asp-for="Price"></label> 
+        <input asp-for="Price" class="form-control" /> 
+        <span asp-validation-for="Price" class="text-danger"></span> 
+    </div> 
+    <div class="form-group"> 
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories"
+                class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageUrl">Product Image</label>
+        <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" />
+        <img id="previewImage" src="" alt="Preview" style="max-width:200px; display:none;" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form> 
+@section Scripts {
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('previewImage');
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    preview.src = event.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

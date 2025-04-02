@@ -1,0 +1,20 @@
+﻿@model DINHTHEVINH_2280603677.Models.Product
+
+<h2>@Model.Name</h2>
+
+<div>
+    <h3>Price: @Model.Price</h3>
+    <p>@Model.Description</p>
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        string imagePath = Url.Content(Model.ImageUrl); // Đảm bảo đường dẫn chính xác
+        <img src="@imagePath" alt="Product Image" style="max-width:200px;"
+             onerror="this.src='/images/placeholder.jpg';" />
+    }
+    else
+    {
+        <p>Không có ảnh sản phẩm.</p>
+    }
+</div>
+
+<a asp-action="Index">Back to List</a>

@@ -1,0 +1,7 @@
+﻿@model DINHTHEVINH_2280603677.Models.Product
+<h2>Delete Product</h2> 
+<form asp-action="DeleteConfirmed" method="post"> 
+<input type="hidden" asp-for="Id" /> 
+<p>Bạn có chắc muốn xoá chứ? @Model.Name?</p> 
+<button type="submit" class="btn btn-danger">Delete</button> 
+</form> 

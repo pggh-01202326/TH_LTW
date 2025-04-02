@@ -1,0 +1,62 @@
+﻿@model DINHTHEVINH_2280603677.Models.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h2>Edit Product</h2>
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageUrl">Product Image</label>
+        <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" accept="image/*" />
+        <img id="previewImage" src="@(string.IsNullOrEmpty(Model.ImageUrl) ? "/images/placeholder.jpg" : Url.Content(Model.ImageUrl))"
+             alt="Product Image" style="max-width:200px; margin-top:10px;" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('previewImage');
+            if (file) {
+                if (!file.type.startsWith('image/')) {
+                    alert('Vui lòng chọn một file ảnh hợp lệ.');
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    preview.src = event.target.result;
+                };
+                reader.onerror = function () {
+                    alert('Không thể đọc file ảnh.');
+                    preview.src = '/images/placeholder.jpg';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

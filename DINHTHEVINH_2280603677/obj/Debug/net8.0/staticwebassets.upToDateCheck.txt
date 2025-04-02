@@ -1,5 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\6059e47c-fe32-45fb-aa5a-9443045324b9.jpg
+wwwroot\images\809f440c-8152-4155-9db9-d317de25d4ae.jpg
+wwwroot\images\d9588a85-ab40-4130-a551-a0e1b0fe518b.jpg
+wwwroot\images\ff79cce7-f7fe-4323-8d3d-88321e7caaa8.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
